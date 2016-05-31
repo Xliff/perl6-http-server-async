@@ -1,6 +1,6 @@
 use HTTP::Response;
 
-class HTTP::Server::Async::Response does HTTP::Response {
+class HTTP::Server::Async::Response is HTTP::Response {
   has @!buffer;
   has Bool $!buffered = True;
   has Bool $!senthead = False;
